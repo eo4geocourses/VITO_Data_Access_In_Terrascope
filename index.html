@@ -2,418 +2,600 @@
 		Template Creation Date: March-June 2020 
 		
 		IMPORTANT NOTICES FOR USERS/AUTHORS: 
-		SECTIONS TO BE EDITED BY AUTHORS ARE INDICATED AS FOLLOWS:  <!-- AUTHORS: DEFINE ... --> 
+		SECTIONS TO BE EDITED BY AUTHORS ARE INDICATED AS FOLLOWS:  AUTHORS: DEFINE ... -->
 <!--	THE COMMANDS <section> and </section>  EMBRACE THE CONTENT FOR EACH SINGLE SLIDE.
-		ALTERNATIVELY, YOU CAN USE MARKDOWN NOTATION TO CREATE YOUR SLIDES. More information: https://github.com/webpro/reveal-md 
+		ALTERNATIVELY, YOU CAN USE MARKDOWN NOTATION TO CREATE YOUR SLIDES. More information: https://github.com/webpro/reveal-md
 		-->
-		
-		
+
+
 <!doctype html>
-<html lang="en" >
+<html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		 
-		<title>eo4geo template for Reveal JS</title>
+<head>
+	<meta charset="utf-8">
 
-		<link rel="stylesheet" href="internal_restricted/v1.0/css/reveal.css">
-		<!-- CHOOSE BETWEEN 2 EO4GEO TEMPLATE THEMES:-->
-		<link rel="stylesheet" href="internal_restricted/v1.0/css/theme/eo4geo.css" id="theme"> <!-- white background design --> 
-		<link rel="stylesheet" href="internal_restricted/v1.0/plugin/markdown/css/theme/simplemenu.css">
-		<link rel="stylesheet" href="internal_restricted/v1.0/css/theme/eo4geo_grey.css" id="theme">  <!-- anthrazit background design --> 
-		<!-- EO4GEO FONT ROBOTO SLAB -->
-		<link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'> 
-		<link rel="stylesheet" href="partnerLogo.css" id="theme"> 
-		<link rel="stylesheet" href="customer_content/css/eo4geo_override.css" id="theme">
+	<title>Terrascope</title>
 
-    <base target="_blank"> <!-- All links in the presentation are opened in a seperate tab"-->
- 
-	</head>
+	<link rel="stylesheet" href="internal_restricted/v1.0/css/reveal.css">
+	<!-- CHOOSE BETWEEN 2 EO4GEO TEMPLATE THEMES:-->
+	<link rel="stylesheet" href="internal_restricted/v1.0/css/theme/eo4geo.css" id="theme">
+	<!-- grey background design -->
+	<link rel="stylesheet" href="internal_restricted/v1.0/plugin/markdown/css/theme/simplemenu.css">
 
-	<body>
-		  
-		<div class="reveal" >
-		
-			 <!-- FORMATTING FOR HEADER -->
-			
-					
-				 <div class = "eo4geologo" style="width: 11%;height : 11%" ></div>	
-			
-				 <div class = "partnerlogo" style="width: 15%;height : 11%" ></div>		
-				 <div  class = "presentation_title" style=" text-align: center " >What is Copernicus?</div>	<!--The title of the presentation appears on each slide-->
-				 
+	<!-- EO4GEO FONT ROBOTO SLAB -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+	<link rel="stylesheet" href="partnerLogo.css" id="theme">
+	<link rel="stylesheet" href="customer_content/css/eo4geo_override.css" id="theme">
 
-			<!-- AUTHORS: DEFINE METADATA FOR WHOLE SLIDESET HERE: (Dublin Core Metadata format, complemented by BoK-Concepts) >
-				@prefix dc: <http://purl.org/dc/terms/>.
-				@prefix eo4geo: <http://bok.eo4geo.eu/>.
-				<>  	dc:title "What is Copernicus?";
-					dc:creator "Stefan Lang, University of Salzburg";
-					dc:subject "Copernicus, EO4GEO, WP5, Satellite, Earth Observation";
-					dc:abstract "This is a template slideset for EO4GEO Partners to familiarize with EO4GEO, introducing the idea of Copernicus and its services. Nevertheless, content-generation is not the prime concern of the template. ";
-					dc:tableOfContents "(1) What is EO?; (2) Benefits of Copernicus; (3) Integration of Jupyter Notebooks; 
-						(4) Integration of Youtube Video; (5) Integration of H5P; (6) Copernicus Services; (7) Reference list;";
-					dc:description "Learning outcomes: Understand the Copernicus ecosystem and services; perform simple analysis with Jupyter Notebook; Understand Copernicus Climate Change Service;";
-					dc:contributor "Eva Missoni, Barbara Hofer";
-					dc:created "2020-06-20";
-					dc:type "InteractiveResource";
-					dc:format "html";
-					dc:language "EN"; 
-					dc:SizeOrDuration "45min"
-					dc:audience "students";
-					dc:educationLevel "EQF 6";
-					dc:source "Existing youtube-video on Copernicus Climate Change Service; existing Jupyter Notebook on "Well switching in Bangladesh"";
-					dc:rightsHolder "Stefan Lang, University of Salzburg";
-					dc:license "CC BY-SA 4.0";
-					dc:relation eo4geo:TA7-5-1;
-					dc:relation eo4geo:TA7-5-2;
-					dc:relation eo4geo:GS3 .	
-								-->
+	<base target="_blank"> <!-- All links in the presentation are opened in a separate tab"-->
+
+</head>
+
+<body>
+
+<div class="reveal">
+
+	<!-- FORMATTING FOR HEADER -->
 
 
-				<div class="slides">
-				
-			
-				<!-- AUTHORS: DEFINE CONTENT ON YOUR FIRST SLIDE --> 
-				<section >
-					<h1>What is Copernicus?</h1>
-					(A demo slide deck using the <em>Reveal.js</em> framework)
-				<!-- AUTHORS: PUT YOUR PRESENTER NOTES HERE: -->
-				<aside class="notes">
-					Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
-				</aside>
-				</section>
-				
-				
-				<!-- AUTHORS: DEFINE CONTENT FOR YOUR SECOND SLIDE: --> 
-				<!--<section class="scrollable">
-					<h1>Copernicus</h1> 
-					<br>Copernicus and Galileo are the two flagships of the <em>European Space Policy</em>. Galileo denotes the European satellite navigation system, while Copernicus is the name of the European Earth observation <a href="https://www.copernicus.eu">programme</a>
-					<br><img width="600" height="300" data-src="resources\template_WhatCopernicus\CopMountain.jpg" alt="Copernicus allegory">
-				</section>
-				
-					<!-- AUTHORS: DEFINE CONTENT FOR YOUR SECOND SLIDE: --> 
-				<!--<section >
-					<h1>Copernicus</h1> 
-					<br>
-					 
-					<br><img  style="width: 100%; max-width: 600px; max-height:600px; height:100%" data-src="resources\2560pxAERONET.jpg" alt="Copernicus allegory">
-					 
-				</section>
-				
-				<!-- AUTHORS: Same content as above - now as example in Markdown language   --> <!-- AUTHORS: for horizontally organised slides, use three dashes ---, for vertical slides two dashes -- -->
-				<!--section data-markdown data-separator="---" data-separator-vertical="--" data-separator-notes="^Note:"> 
-				                    <script type="text/template">
-                        # What is Copernicus?
-                        (A demo slide deck using the Reveal.js framework)
-					
-						
-                        ---
-						
-                        # Copernicus
-                        Copernicus and Galileo are the two flagships of the European Space Policy. Galileo denotes the European satellite navigation system, while Copernicus is the name of the <a href="https://www.copernicus.eu">European Earth observation programme</a>
-						<img width="600" height="300" data-src="resources\template_WhatCopernicus\CopMountain.jpg" alt="Copernicus allegory">
-						
-						
-						--
-						
-						# Earth observation (EO)
-						EO is one out of three main space assets
-						- SatNav
-                        - SatCom
-						- SatObs (EO)
-						
-						<img width="600" height="250" data-src="resources\template_WhatCopernicus\3SpaceComponents.png" alt="3SpaceComponents">	
-                    </script>
-                </section-->
-				
-			
-				
-				<!-- AUTHORS: DEFINE SECTIONS WITHIN A SECTION TO GET VERTICAL SLIDES:--> 
-				<section id="EO">
-					<section > 
-						<h2>Earth observation (EO)</h2> 
-						<p>EO is one out of three main <em>space assets</em>.</p>
-						<!-- AUTHORS: CREATE BULLETED LIST: --> 
-						<ul>
-							<li style="color:#89b3e479;">SatNav</li>
-							<li style="color:#89b3e479;">SatCom</li>
-							<li style="color:#337acc;">SatObs (EO)</li>
-						</ul>
-						<br><img width="600" height="250" data-src="resources\template_WhatCopernicus\3SpaceComponents.png" alt="3SpaceComponents">	
-						
-						<aside class="notes">
-						You can find your presenter notes here (hit »S« on your keyboard).
-						</aside>
-					</section>
-					
-					<section >
-						<h2 style="color:#89b3e479;">Satellite navigation (SatNav)</h2>
-						<p>The European SatNav programme is called <em>Galileo</em>. With EGNOS, the European differential global positioning system, it belongs to the world spanning <em>global navigation satellite systems</em> (GNSS).</p>
-						<br><img width="600" height="200" data-src="resources\template_WhatCopernicus\UseGalileo.jpg" alt="sat1">
-						<small>Galileo-enabled smartphones can be used in many different <a href="https://www.usegalileo.eu/">applications</a>.</small>
-					</section>
-					
-					<section >
-						<h2 style="color:#89b3e479;">Satellite communication (SatCom)</h2>
-						<p>SatCom allows <em>telecommunication</em> all around the globe. Communication satellites receive signals from Earth and retransmit them by a <em>transponder</em>.</p>
-						<br><img width="600" height="300" data-src="resources\template_WhatCopernicus\SatComIntelsat.jpg" alt="sat1"></a>
-						<small>The satellite as a self-contained communications system, the example of <a href="https://www.intelsatgeneral.com/satellite-basics/">IntelSat</a>.</small>
-						
-					</section>
-					
-					<section >
-						<h2 style="color:#337acc;">Earth observation (EO)</h2>
-						<p>Earth observation is the systematic usage of <em>satellite remote sensing</em> technology for continuous or on-demand <em>imaging</em> or <em>measuring</em> the Earth surface </p>
-						<br><a href="#/EO"><img width="500" height="250" data-src="resources\template_WhatCopernicus\ISS_AstroAlex.jpg" alt="sat1"></a>
-						<small>A view from the Cupola, the observation deck of the ISS. Photograph by astronaut <a href="https://twitter.com/astro_alex">A. Geerst</a>.</small>
-						<br>
-						<a href="#/EO"> Back to top </a>
-					</section>
-				</section>
-				
-				<!-- AUTHORS: INCLUDE AN IMAGE IN YOUR SLIDE: --> 
-				<section ><h2> ... a little allegory on the benefit of Copernicus</h2>
-					<br>New EO data, depicted by the database symbol on the left hand side of the seesaw, make Mr/Mrs Copernicus better positioned for their observations. Thus, EO data <em>leverage</em> a better overview and understanding.
-					<br><img width="600" height="300" data-src="resources\template_WhatCopernicus\EOlever.jpg" alt="Copernicus allegory">
-					<br>
-					
-					<!-- AUTHORS: ADD REFERENCES TO YOUR resources,... -->
-					<citation>(St Lang & A Traun, 2015) [set border to zero, set background to transparent, figure to be obtained via JQuery from pic/caption collection]</citation>
-				</section>
-				
-				<!-- AUTHORS:   Option to Jupyter Notebook (Python) AS IFRAME (deriving from the H5P.org site or from a H5P plugin in Moodle, Blackboard, WordPress,...): --> 
-				<section data-background-iframe="https://nbviewer.jupyter.org/github/carljv/Will_it_Python/blob/master/ARM/ch5/arsenic_wells_switching.ipynb">
-				</section>
-				
-				<!-- AUTHORS: 1st Option to INCLUDE H5P CONTENT AS IFRAME (deriving from the H5P.org site or from a H5P plugin in Moodle, Blackboard, WordPress,...): --> 
-				<section data-background-iframe="https://ideaslab.sbg.ac.at/ideaslab/wp-admin/admin-ajax.php?action=h5p_embed&id=5">
-				</section>
-				
-				<!-- AUTHORS: 2nd Option to INCLUDE H5P CONTENT AS IFRAME (deriving from the H5P.org site or from a H5P plugin in Moodle, Blackboard, WordPress,...): -->
-				<section class="scrollable"> 
-					 <iframe src="https://ideaslab.sbg.ac.at/ideaslab/wp-admin/admin-ajax.php?action=h5p_embed&id=5" width="1481" height="1280" frameborder="0" allowfullscreen="allowfullscreen"></iframe></script>
-					</section>
-				<!--AUTHORS: Integration of Jupyter Notebooks from VITO-Platform - user authentification not solved yet -->
-				<!--section class="scrollable"> 
-					 <iframe src="https://notebooks.vgt.vito.be/user/emissoni/lab/tree/PLUS_Test.ipynb" width="1481" height="1280" frameborder="0" allowfullscreen="allowfullscreen"></iframe></script>
-				</section-->	
-					
-					
-				<section >
-					<section>
-						<h2>The Copernicus idea</h2>
-						<p>Copernicus comprises two major  <em>components</em>.</p>
-						<ul>
-							<li style="color:#337acc;">Space component</li>
-							<li style="color:#33b5cc;">(Integrated) Ground segment</li>
-						</ul>
-						<br><img width="400" height="200" data-src="resources\template_WhatCopernicus\sat1.jpg" alt="sat1">
+	<div class="eo4geologo" style="width: 11%;height : 11%"></div>
 
-					</section>
-					
-					<section >
-						<h2 style="color:#337acc;">Space component (satellites)</h2>
-						<p>The Sentinel family is the backbone of the Copernicus EO space asset</p>
-						<!-- AUTHORS: CREATE A TABLE: --> 
-						<table>
-							<thead>
-								<tr>
-									<th><small>Satellite</th>
-									<th><small>Sensor</th>
-									<th><small>Type</small></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Sentinel-1</td>
-									<td>SAR</td>
-									<td>radar</td>
-								</tr>
-								<tr>
-									<td>Sentinel-2</td>
-									<td>MSI</td>
-									<td>optical</td>
-								</tr>
-								<tr>
-									<td>Sentinel-3</td>
-									<td>...</td>
-									<td>...</td>
-								</tr>
-								<tr>
-									<td>Sentinel-5</td>
-									<td>...</td>
-									<td>...</td>
-								</tr>
-							</tbody>
-						</table>
-					</section>
-					<section >
-						<h2 style="color:#33b5cc;">Ground segment</h2>
-						<p>The Copernicus integrated ground segment includes</p>
-						<ul>
-							<li>Receiving stations</li>
-							<li>Satellite data storage systems</li>
-							<li>In-situ observation network</li>
-						</ul>
-						<br>
-					</section>
+	<div class="partnerlogo" style="width: 17%;height : 10%"></div>
+	<div class="presentation_title" style=" text-align: center ">Terrascope Platform</div>
+	<!--The title of the presentation appears on each slide-->
 
-				</section>
 
-				<section >
-					<h3>beyond space assets and data</h3>
-					<br>The fundamental objective of Copernicus is to support <em>global policies and conventions</em> as well as <em>EU regulations and directives</em> with a defined portfolio of geospatial information services.
-				</section>
-				
-				<section >
-				<!-- AUTHORS: make long content scrollable --> 
-					<section class="scrollable">
-						<h2>Copernicus services</h2>
-						<p>There are six so-called <em>Copernicus [core] services</em> in six major thematic areas.</p>
-						<table><small>
-							<tr>
-							<ul>
-								<li>Land monitoring</li>
-								<li>Ocean monitoring</li>
-								<li>Atmosphere monitoring</li>
-							</ul>	
-							</tr>
-							<tr><ul>
-								<li>Climate change</li>
-								<li>Emergency management</li>
-								<li>Human security</li>
-							</ul></tr>
-							</small>
-						</table>
-						<br><img width="800" height="130" data-src="resources\template_WhatCopernicus\6services.png" alt="six services">
-						
-						<p>There are six so-called <em>Copernicus [core] services</em> in six major thematic areas.</p>
-						<table><small>
-							<tr>
-							<ul>
-								<li>Land monitoring</li>
-								<li>Ocean monitoring</li>
-								<li>Atmosphere monitoring</li>
-							</ul>	
-							</tr>
-							<tr><ul>
-								<li>Climate change</li>
-								<li>Emergency management</li>
-								<li>Human security</li>
-							</ul></tr>
-							</small>
-						</table>
-						<br><img width="800" height="130" data-src="resources\template_WhatCopernicus\6services.png" alt="six services">
-						
-						<p>There are six so-called <em>Copernicus [core] services</em> in six major thematic areas.</p>
-						<table><small>
-							<tr>
-							<ul>
-								<li>Land monitoring</li>
-								<li>Ocean monitoring</li>
-								<li>Atmosphere monitoring</li>
-							</ul>	
-							</tr>
-							<tr><ul>
-								<li>Climate change</li>
-								<li>Emergency management</li>
-								<li>Human security</li>
-							</ul></tr>							
-							</small>
-						</table>
-						<br><img width="800" height="130" data-src="resources\template_WhatCopernicus\6services.png" alt="six services">
+	<!-- AUTHORS: DEFINE METADATA FOR WHOLE SLIDESET HERE: (Dublin Core Metadata format, complemented by BoK-Concepts) >
+        @prefix dc: <http://purl.org/dc/terms/>.
+        @prefix eo4geo: <http://bok.eo4geo.eu/>.
+        <>  	dc:title "Terrascope";
+            dc:creator "VITO - Vlaamse Instelling voor Technologisch Onderzoek";
+            dc:subject "Terrascope, MEP, Copernicus, EO4GEO, WP5";
+            dc:abstract "This is a template slideset for EO4GEO Partners to familiarize with EO4GEO, introducing the idea of Copernicus and its services. Nevertheless, content-generation is not the prime concern of the template. ";
+            dc:tableOfContents "add TOC";
+            dc:description "Learning outcomes: Understand the Copernicus ecosystem and services; perform simple analysis with Jupyter Notebook; Understand Copernicus Climate Change Service;";
+            dc:contributor "Jurgen Everaerts, Hande Erdem, Jeroen Dries";
+            dc:created "2020-08-20";
+            dc:type "InteractiveResource";
+            dc:format "html";
+            dc:language "EN";
+            dc:SizeOrDuration "45min"
+            dc:audience "scientists, managers, public sector, general public";
+            dc:educationLevel "EQF 6";
+            dc:source "Terrascope content";
+            dc:rightsHolder "VITO";
+            dc:license "CC BY-SA 4.0";
+            dc:relation eo4geo:TA7-5-1;
+            dc:relation eo4geo:TA7-5-2;
+            dc:relation eo4geo:GS3 .
+                        -->
 
-					</section>
-						<section>
-						<img width="150" height="60" data-src="resources\template_WhatCopernicus\CLMS_logo.png" alt="six services">
-						<h2 style="color:#33cc80;">Land monitoring (CLMS)</h2>
-						<p>Copernicus is a European system for monitoring the Earth.</p>
-						<img width="800" height="200" data-src="resources\template_WhatCopernicus\CLand.png" alt="six services">
-						<small>The four Copernicus land monitoring <a href="https://land.copernicus.eu">service</a> components</small>
-					</section>
-					<section>
-						<img width="100" height="100" data-src="resources\template_WhatCopernicus\CMEMS_logo.png" alt="six services">
-						<h2 style="color:#33adcc;">Ocean monitoring (CMEMS)</h2>
-						<p>The Copernicus Marine Environment Monitoring Service focuses on the global ocean.</p>
-						<img width="800" height="200" data-src="resources\template_WhatCopernicus\CMarine.png" alt="six services">
-						<small>The Copernicus marine monitoring <a href="http://marine.copernicus.eu/services-portfolio/access-to-products">service</a> portfolio</small>
-					</section>
-					<section>
-						<img width="250" height="80" data-src="resources\template_WhatCopernicus\CAMS_logo.png" alt="six services">
-						<h2 style="color:#33adcc8c;">Atmosphere monitoring (CAMS)</h2>
-						<p>The Copernicus Marine Environment Monitoring Service focuses on the global ocean.</p>
-						<img width="800" height="200" data-src="resources\template_WhatCopernicus\CAtm.png" alt="six services">
-						<small>The Copernicus atmosphere monitoring <a href="https://atmosphere.copernicus.eu/catalogue#/">service</a> portfolio</small>
-					</section>
-					<section>
-						<h2 style="color:#cc4533d3;">Climate change</h2>
-						<p>...</p>
-					</section>
-					<section>
-						<h2 style="color:#caae60b9;">Emergency management</h2>
-						<p>...</p>
-						<br>
-					</section>
-					<section>
-						<h2 style="color:#33adcc49;">Human security</h2>
-						<p>...</p>
-						<br>
-					</section>
-				</section>
+	<div class="slides">
 
-				<section >
-					<section >
-						<h2>The Copernicus ecosystem</h2>
-						<p>Copernicus engages different <em>actor groups</em>.</p>
-						<ul>
-							<li style="color:#bbb7a8;">Data providers</li>
-							<li style="color:#c5b2ca8f;">Service providers</li>
-							<li style="color:#cc5733;">Users and stakeholders</li>
-						</ul>
-						<br><img width="600" height="300" data-src="resources\template_WhatCopernicus\UserUptake.png" alt="User uptake">
-					</section>
-					
-					<section>
-						<h2 style="color:#bbb7a8;">Data providers</h2>
-						<p>Next to the Sentinel satellites there is a series of contributing missions, including commercial providers of very high (spatial) resolution (VHR)  data.</p>
-						<br><img width="600" height="300" data-src="resources\template_WhatCopernicus\SatSubmeter.png" alt="Worldview-2">
-					</section>
-					
-					<section>
-						<h2 style="color:#c5b2ca8f;">Service providers</h2>
-						<p>...</p>
-						<br>
-					</section>
-					
-					<section>
-						<h2 style="color:#cc5733;">Users and stakeholders</h2>
-						<p>...</p>
-						<br>
-					</section>
-				</section>
-				
-				<!-- AUTHORS: CREATE YOUR LIST OF REFERENCES HERE: -->
-				<section> 
-				<h2> Reference list </h2>
+		<!-- AUTHORS: DEFINE CONTENT ON YOUR FIRST SLIDE -->
+		<section>
+
+			<!-- AUTHORS: PUT YOUR PRESENTER NOTES HERE: -->
+			<img src="resources\terrascope\terrascope.png">
+			<aside class="notes">
+			</aside>
+		</section>
+
+		<section>
+			<h2>What is Terrascope?</h2>
+			<p>Terrascope is the Belgian Collaborative Ground Segment for Sentinel missions. <br>It provides easy access
+				to:</p>
+			<ul>
+				<li style="color:#89b3e479;">satellite data</li>
+				<li style="color:#89b3e479;">products derived from satellite data</li>
+				<li style="color:#337acc;">services (webservices, time series service)</li>
+				<li style="...">cloud processing capacity (Jupyter notebooks, virtual machines)</li>
+			</ul>
+			<p>Terrascope is <em>open and free to use for everyone</em>.</p>
+			<aside class="notes">
+				Terrascope is open and free to use for everyone (scientists, public authorities, industry, citizens).
+				Terrascope is funded by Belspo.
+			</aside>
+		</section>
+
+		<section>
+			<h2>Stop downloading - use cloud processing</h2>
+			<br>
+			<p>Terrascope cluster and growing</p>
+			<ul>
+				<li style="color:#89b3e479;">> 3700 cores</li>
+				<li style="color:#89b3e479;">> 13TB memory</li>
+				<li style="color:#337acc;">> 6.5 PB storage</li>
+
+			</ul>
+			<p>Access all data directly using</p>
+			<ul>
+				<li style="color:#89b3e479;">Web services</li>
+				<li style="color:#89b3e479;">Virtual machines</li>
+				<li style="color:#337acc;">Jupyter notebooks</li>
+
+			</ul>
+			<p>Make platform independent code with <a href="https://openeo.org">OpenEO</a></p>
+			<aside class="notes">
+				Terrascope cluster consists of a data center which provides more than 3700 CPU cores, 13 TB memory and
+				6.5 PB storage. This cluster is growing consistently to accommodate the needs of the users.
+			</aside>
+		</section>
+
+
+		<section>
+			<h2>Terrascope Features</h2>
+			<br>
+			<ul>
+				<li style="color:#89b3e479;"><em>Viewer</em> - easy access; basic analysis methods</li>
+				<li style="color:#89b3e479;"><em>Webservices</em> - integrate data and products without downloading</li>
+				<li style="color:#337acc;"><em>Virtual Machines</em> - your desktop running on the Terrascope cluster
+				</li>
+				<li style="color:#337acc;"><em>Notebooks</em> - development environment on Terrascope cluster</li>
+			</ul>
+			<aside class="notes">
+			</aside>
+		</section>
+
+		<section>
+			<h2>Analysis Ready Data</h2>
+			<br>
+			<ul>
+				<li style="color:#89b3e479;">Converted to usable format (cloud optimized geotiff)</li>
+				Enables easy integration into geospatial analysis.
+				<li style="color:#89b3e479;">Delivery of standard products</li>
+				It allows you to get to work immediately by taking away the hassle of pre-processing.
+				<li style="color:#337acc;">Integration into web services</li>
+				You can use <em>Time series extraction</em> service to see evolution over time.<br>
+				<em>CROPSAR</em> service shows evolution over time, even through the clouds. <br>
+				<em>WM(T)S</em> allows you to integrate the data in geospatial software without having to download it.
+
+			</ul>
+			<aside class="notes">
+				Terrascope provides analysis ready data in cloud optimized geotiff format which allows users to
+				integrate the data easily into their geospatial analysis.
+				Terrascope also provides useful webservices such as (1)time series extraction to see the evolution over
+				time,
+				(2) Cropsar which combines Sentinel-1 and Sentinel-2 data to show evolution over time, even through the
+				clouds,
+				or (3) WM(T)S service to be able to integrate the data into GIS without having to download it.
+			</aside>
+		</section>
+		<section id="dataproducts">
+			<section>
+				<h2>Data and Products</h2>
+				<p>Terrascope offers</p>
+				<ul>
+					<li>Satellite data and</li>
+					<li>Derived products</li>
+				</ul>
+				<br><br>
+				<p>Scroll down for more...</p>
+			</section>
+			<section>
+				<h2>Satellite data</h2>
+				<table>
+					<tr>
+						<th></th>
+						<th>Sentinel 1</th>
+						<th>Sentinel 2</th>
+					</tr>
+					<tr>
+						<td>Instrument</td>
+						<td>Synthetic Aperture RADAR</td>
+						<td>Multispectral camera</td>
+					</tr>
+					<tr>
+						<td>Characteristics</td>
+						<td>X-band,
+							VV/VH polarization,
+							ascending/descending orbits
+						</td>
+						<td>12 bands (440nm - 2200nm) (VIS&SWIR)</td>
+					</tr>
+					<tr>
+						<td>Resolution</td>
+						<td>~ 5x20 m2 per pixel</td>
+						<td>10x10, 20x20 or 60x60 m2</td>
+					</tr>
+					<tr>
+						<td>Revisit Rate</td>
+						<td>6 days (same orbit)<br>
+							1-2 days (all orbits)
+						</td>
+						<td>5 days (same orbit)<br>
+							2-3 days (all orbits)
+						</td>
+					</tr>
+					<tr>
+						<td>Overpass Time</td>
+						<td>~8 AM or ~8PM (summer)<br>
+							~7 AM or ~7PM (winter)
+						</td>
+						<td>~1 PM (summer)<br>
+							~12 PM (winter)
+						</td>
+					</tr>
+					<tr>
+						<td>Coverage</td>
+						<td>Belgium</td>
+						<td>EEA countries (Europe)</td>
+					</tr>
+					<tr>
+						<td>Archive</td>
+						<td>Since 2015</td>
+						<td>Since 2015 (Belgium),
+							2-year rolling archive (other areas)
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Derived Products - Sentinel 1</h2>
+				<table>
+					<tr>
+						<th></th>
+						<th>What is it?</th>
+					</tr>
+					<tr>
+						<td>Single Look Complex (SLC)</td>
+						<td>Full information of data acquisition (signal strength, phase, polarization) – needed for
+							advanced analyses
+						</td>
+					</tr>
+					<tr>
+						<td>Ground Range Detected (GRD)</td>
+						<td>Signal strength, projected - can be visualized and overlaid with other georeferenced data
+						</td>
+					</tr>
+					<tr>
+						<td>Coherence</td>
+						<td>Similarity between data takes 6 days apart, projected – can be used to detect changes
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Derived Products - Sentinel 2</h2>
+				<table>
+					<tr>
+						<th></th>
+						<th>What is it?</th>
+					</tr>
+					<tr>
+						<td>Normalized Differential Vegetation Index (NDVI)</td>
+						<td>Information about the greenness of the vegetation</td>
+					</tr>
+					<tr>
+						<td>Fraction of Absorbed Photosynthetically Active Radiation (FAPAR)</td>
+						<td>Information about the photosynthetic activity of green vegetation</td>
+					</tr>
+					<tr>
+						<td>Leaf Area Index (LAI)</td>
+						<td>Information about the biomass</td>
+					</tr>
+					<tr>
+						<td>Fraction of vegetation Cover (FCOVER)</td>
+						<td>Information about the extent of vegetation</td>
+					</tr>
+					<tr>
+						<td>Canopy Water Content (CWC)</td>
+						<td>Information about vegetation drought stress</td>
+					</tr>
+					<tr>
+						<td>Canopy Chlorophyl Content (CCC)</td>
+						<td>Information about photosynthetic activity</td>
+					</tr>
+				</table>
+			</section>
+		</section>
+
+		<section>
+			<h2>How to access the data on Terrascope?</h2>
+			There are several options available. You can...
+			<ul>
+				<li>...<em>download</em> them</li>
+				<ul>
+					<li>using Terrascope viewer interface</li>
+					<li>or using the OpenSearch catalogue</li>
+					<li>factor in the time for downloading and the cost of storage</li>
+				</ul>
+				<li>...use <em>web services</em></li>
+				<ul>
+					<li>WM(T)S</li>
+					<li>time series, including CROPSAR</li>
+					<li>no need to download</li>
+				</ul>
+				<li>...work with them on <em>Terrascope virtual environments</em></li>
+				<ul>
+					<li>no need to download</li>
+				</ul>
+			</ul>
+		</section>
+
+		<section id="download">
+			<section>
+				<h2>Downloading data using Terrascope Viewer</h2>
+				<ol>
+					<li>Log in using your Terrascope credentials</li>
+					<li>Select the <em>Download</em> tab</li>
+					<li>Expand the orange bar</li>
+					<li>Adapt the search criteria (also advanced ones)</li>
+					<li>Select products, press <em>Next</em></li>
+					<li>Select file types to download, then press <em>Next</em></li>
+					<li>Wait for download to finish</li>
+				</ol>
+			</section>
+			<section>
+				<h2>Log In</h2>
 				<br>
-				<reference_list>exemplary doi:<br><br>
-				Barbara Hofer (2018). Innovation in geoprocessing for a Digital Earth. International Journal in Digital Earth.
+				<img src="resources\terrascope\download1.jpg">
+			</section>
+			<section>
+				<h2>Enter Credentials</h2>
 				<br>
-				<a href="https://doi.org/10.1080/17538947.2017.1379154">10.1080/17538947.2017.1379154</a>
-				</reference_list>
-				</section>
-				
-				
-				<section>Slide show ends</section>
-			
-                </section>
+				<img src="resources\terrascope\download2.jpg">
+			</section>
+			<section>
+				<h2>Select the Download Tab</h2>
+				<br>
+				<img src="resources\terrascope\download3.jpg">
+			</section>
+			<section>
+				<h2>Expand the Orange Bar</h2>
+				<br>
+				<img src="resources\terrascope\download4.jpg">
+			</section>
+			<section>
+				<h2>Adapt Search Criteria</h2>
+				<br>
+				<img src="resources\terrascope\download5.jpg">
+			</section>
+			<section>
+				<h2>Select Products</h2>
+				<br>
+				<img src="resources\terrascope\download6.jpg">
+			</section>
+			<section>
+				<h2>Select Files</h2>
+				<br>
+				<img src="resources\terrascope\download7.jpg">
+			</section>
+			<section>
+				<h2>Wait for the Download to Complete</h2>
+				<br>
+				<img src="resources\terrascope\download8.jpg">
+			</section>
+		</section>
+		<section id="oscars">
+			<section>
+				<h2>Downloading data using OpenSearch Catalogue</h2>
+				<ul>
+					<li>Terrascope provides a catalogue service based on <em>OpenSearch</em> and <em>GeoJSON</em>
+						collection and product metadata.
+					</li>
+					<li><em>The OpenSearch Interface</em> is an <em>Open Geospatial Consortium (OGC)</em> standard based
+						interface for the discovery of available Remote Sensing data collections and products.
+					</li>
+					<li>Users can discover the Terrascope Remote Sensing data using the web service, while OpenSearch
+						clients can launch requests to the OpenSearch Interface for EO data discovery and download.
+					</li>
+					<li>Next to the standard GeoJSON format, the catalogue service supports also ATOM.
+					</li>
+					<li>For more information, visit <a
+							href="https://docs.terrascope.be/#/Developers/WebServices/TerraCatalogue/TerraCatalogue">https://docs.terrascope.be/#/Developers/WebServices/TerraCatalogue/TerraCatalogue</a>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>OpenSearch Catalogue Example 1</h2>
+				<h4>Discover all collections:</h4>
 
-              </div>
+				<p><a href="https://services.terrascope.be/catalogue/description">https://services.terrascope.be/catalogue/description</a>
+				</p>
+				<img src="resources\terrascope\oscars1.jpg">
+			</section>
+			<section>
+				<h2>OpenSearch Catalogue Example 1</h2>
+				<h4>Discover all collections</h4>
+				<h5>Result Summary:</h5>
+				<table>
+					<tr>
+						<td>TERRASCOPE_S1_SLC_COHERENCE_V1</td>
+					</tr>
+					<tr>
+						<td>TERRASCOPE_S2_TOC_V2</td>
+					</tr>
+					<tr>
+						<td>TERRASCOPE_S2_CCC_V2</td>
+					</tr>
+					<tr>
+						<td>TERRASCOPE_S2_CWC_V2</td>
+					</tr>
+					<tr>
+						<td>TERRASCOPE_S2_LAI_V2</td>
+					</tr>
+					<tr>
+						<td>TERRASCOPE_S2_NDVI_V2</td>
+					</tr>
+					<tr>
+						<td>TERRASCOPE_S2_FAPAR_V2</td>
+					</tr>
+					<tr>
+						<td>TERRASCOPE_S2_FCOVER_V2</td>
+					</tr>
+					<tr>
+						<td>CGS_S1_GRD_L1</td>
+					</tr>
+					<tr>
+						<td>CGS_S1_GRD_SIGMA0_L1</td>
+					</tr>
+					<tr>
+						<td>CGS_S1_SLC_L1</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>OpenSearch Catalogue Example 2</h2>
+				<h4>Find all SENTINEL-2 TOC products (V2) for a specific tile:</h4>
+				<p>
+					<a href="https://services.terrascope.be/catalogue/products?collection=urn:eop:VITO:TERRASCOPE_S2_TOC_V2&tileId=32TPN">https://services.terrascope.be/catalogue/products?collection=urn:eop:VITO:TERRASCOPE_S2_TOC_V2&tileId=32TPN</a>
+				</p>
+				<img src="resources\terrascope\oscars2.jpg">
+			</section>
+			<section>
+				<h2>OpenSearch Catalogue Example 2</h2>
+				<h4>Find all SENTINEL-2 TOC products for a specific tile</h4>
+				<h5>Result Summary (limited to 100):</h5>
+				<table>
+					<tr>
+						<td>TERRASCOPE_S2_TOC_V2:S2A_20180303T102021_32TPN_TOC_V200</td>
+					</tr>
+					<tr>
+						<td>TERRASCOPE_S2_TOC_V2:S2A_20180221T102031_32TPN_TOC_V200</td>
+					</tr>
+					<tr>
+						<td>TERRASCOPE_S2_TOC_V2:S2A_20180129T101251_32TPN_TOC_V200</td>
+					</tr>
+					<tr>
+						<td><em><...></em></td>
+					</tr>
+					<tr>
+						<td>TERRASCOPE_S2_TOC_V2:S2B_20190419T101029_32TPN_TOC_V200</td>
+					</tr>
+					<tr>
+						<td>TERRASCOPE_S2_TOC_V2:S2A_20190401T100031_32TPN_TOC_V200</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>OpenSearch Catalogue Example 3</h2>
+				<h4>Find all SENTINEL-2 CCC products between 01/01/2020 and 31/01/2020 with cloudcover between 6% and
+					17% (both included) over Europe</h4>
+				<p>
+					<a href="https://services.terrascope.be/catalogue/products?collection=urn%3Aeop%3AVITO%3ATERRASCOPE_S2_CCC_V2&start=2020-01-01T00%3A00%3A00&end=2020-01-31T23%3A59%3A59&cloudcover=[6,17]&name=Europe">https://services.terrascope.be/catalogue/products?collection=urn:eop:VITO:TERRASCOPE_S2_CCC_V2&start=2020-01-01T00:00:00&end=2020-01-31T23:59:59&cloudcover=[6,17]&name=Europe</a>
+				</p>
+				<img src="resources\terrascope\oscars3.jpg">
+			</section>
+			<section>
+				<h2>OpenSearch Catalogue Example 3</h2>
+				<h4>Find all SENTINEL-2 CCC products between 01/01/2020 and 31/01/2020 with cloudcover between 6% and
+					17% (both included) over Europe</h4>
+				<h5>Result Summary (limited to 100):</h5>
+				<img src="resources\terrascope\oscars4.jpg">
+			</section>
+			<section>
+				<h2>OpenSearch Catalogue Example 4</h2>
+				<h4>Product download</h4>
+				<p>To download individual products, you can follow these steps:</p>
+				<ol><li>Find all SENTINEL-2 LAI products for the tile "32TPN" between 06/08/2020 and 07/08/2020</li>
+					<li>Identify the file that you want to download</li>
+					<li>Download the image</li>
+				</ol>
+			</section>
+
+			<section>
+				<h2>OpenSearch Catalogue Example 4</h2>
+				<h4>Product download</h4>
+				<a href="https://services.terrascope.be/catalogue/products?collection=urn:eop:VITO:TERRASCOPE_S2_LAI_V2&start=2020-08-05T00:00:00&end=2020-08-07T00:00:00&tileId=32TPN">Find all SENTINEL-2 LAI products for the tile "32TPN" between 06/08/2020 and 07/08/2020:
+				</a>
+				<img src="resources\terrascope\oscars5.jpg">
+			</section>
+
+			<section>
+				<h2>OpenSearch Catalogue Example 4</h2>
+				<h4>Navigate to the contents</h4>
+				<p>For each product, you will find the following set of files:</p>
+				<table>
+					<tr><td>Quick look</td><td></td></tr>
+					<tr><td>Inspire metadata</td><td></td></tr>
+					<tr><td>Scene classification</td><td></td></tr>
+					<tr><td>Product image</td><td></td></tr>
+				</table>
+				<img src="resources\terrascope\oscars6.jpg">
+			</section>
+
+			<section>
+				<h2>OpenSearch Catalogue Example 4</h2>
+				<h4>Download the products</h4>
+				<img src="resources\terrascope\oscars7.jpg">
+			</section>
+		</section>
+		<section id="gis">
+			<section>
+				<h2>Downloading data using web services</h2>
+				<ul>
+					<li>WMS</li>
+					<li>WMTS</li>
+					<li>Both can be used to import the data into GIS or other web applications</li>
+				</ul>
+			</section>
+			<section>
+				<h2>In QGIS: Add WMS/WMTS Layer</h2>
+				<br>
+				<img src="resources\terrascope\gis1.jpg">
+			</section>
+			<section>
+				<h2>WMTS</h2>
+				<p>https://services.terrascope.be/wmts/v2/wmts?service=wmts&request=GetCapabilities</p>
+				<img src="resources\terrascope\gis2.jpg">
+			</section>
+			<section>
+				<h2>Connect</h2>
+				<br>
+				<img src="resources\terrascope\gis3.jpg">
+			</section>
+			<section>
+				<h2>Watch out!</h2>
+				<p>Change the Layer name before you press "Add"</p>
+				<img src="resources\terrascope\gis4.jpg">
+			</section>
+			<section>
+				<h2>Select the date, then press OK</h2>
+				<br>
+				<img src="resources\terrascope\gis5.jpg">
+			</section>
+			<section>
+				<h2>Layer is now available</h2>
+				<br>
+				<img src="resources\terrascope\gis6.jpg">
+			</section>
+		</section>
+
+		<section>
+			<h2>Downloading data using the time series service</h2>
+			<ul>
+				<li>Via Terrascope Viewer</li>
+				<li>TODO expand here</li>
+				<li>Directly</li>
+			</ul>
+		</section>
+
+		<section id="virtual">
+			<section>
+				<h2>Accessing data using the virtual research environment</h2>
+				<ul>
+					<li>Jupyter Notebooks</li>
+					<li>Virtual Machines</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Accessing data through Jupyter Notebooks</h2>
+				<p>Link to next training</p>
+			</section>
+			<section>
+				<h2>Accessing data through Virtual machines</h2>
+				<p>show folders</p>
+			</section>
+		</section>
+
+		<section>Slide show ends</section>
+	</div>
 
 
-		<script src="internal_restricted/v1.0/js/reveal.js"></script>
+	<script src="internal_restricted/v1.0/js/reveal.js"></script>
 
-		<script>
+	<script>
 
 			Reveal.initialize({
 				controls: true,
@@ -428,22 +610,24 @@
                     { src: './internal_restricted/v1.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: './internal_restricted/v1.0/plugin/notes/notes.js' },{ src: 'socket.io/socket.io.js', async: true },
 					{ src: './internal_restricted/v1.0/plugin/notes-server/client.js', async: true }
-					
+
 				]
 			});
 
-		</script>
-		
-		<!-- rauslöschen?? -->
-		<script>Reveal.initialize({
+
+    </script>
+
+	<!-- rauslöschen?? -->
+	<script>Reveal.initialize({
 			simplemenu: {
 				menuselector: '.menu a'
 			},
 			dependencies: [
-				{ src: './internal_restricted/v1.0/plugin/markdown/assets/js/revealjs/plugin/simplemenu/simplemenu.js', async: false } 
+				{ src: './internal_restricted/v1.0/plugin/markdown/assets/js/revealjs/plugin/simplemenu/simplemenu.js', async: false }
 			]
 			});
-		</script>
 
-	</body>
+    </script>
+</div>
+</body>
 </html>
