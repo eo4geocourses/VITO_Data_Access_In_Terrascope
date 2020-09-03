@@ -17,9 +17,8 @@
 	<title>Terrascope</title>
 
 	<link rel="stylesheet" href="internal_restricted/v1.0/css/reveal.css">
-	<!-- CHOOSE BETWEEN 2 EO4GEO TEMPLATE THEMES:-->
+
 	<link rel="stylesheet" href="internal_restricted/v1.0/css/theme/eo4geo.css" id="theme">
-	<!-- grey background design -->
 	<link rel="stylesheet" href="internal_restricted/v1.0/plugin/markdown/css/theme/simplemenu.css">
 
 	<!-- EO4GEO FONT ROBOTO SLAB -->
@@ -101,21 +100,22 @@
 		<section>
 			<h2>Stop downloading - use cloud processing</h2>
 			<br>
-			<p>Terrascope cluster and growing</p>
+			<p>Terrascope cluster consists of:</p>
 			<ul>
-				<li style="color:#89b3e479;">> 3700 cores</li>
-				<li style="color:#89b3e479;">> 13TB memory</li>
+				<li style="color:#337acc;">> 3700 cores</li>
+				<li style="color:#337acc;">> 13TB memory</li>
 				<li style="color:#337acc;">> 6.5 PB storage</li>
+				<li style="color:#337acc;">...and growing!</li>
 
 			</ul>
-			<p>Access all data directly using</p>
+			<p>You can access all data directly using</p>
 			<ul>
-				<li style="color:#89b3e479;">Web services</li>
-				<li style="color:#89b3e479;">Virtual machines</li>
+				<li style="color:#337acc;">Web services</li>
+				<li style="color:#337acc;">Virtual machines</li>
 				<li style="color:#337acc;">Jupyter notebooks</li>
 
 			</ul>
-			<p>Make platform independent code with <a href="https://openeo.org">OpenEO</a></p>
+			<p>You can make platform independent code with <a href="https://openeo.org">OpenEO</a></p>
 			<aside class="notes">
 				Terrascope cluster consists of a data center which provides more than 3700 CPU cores, 13 TB memory and
 				6.5 PB storage. This cluster is growing consistently to accommodate the needs of the users.
@@ -141,9 +141,9 @@
 			<h2>Analysis Ready Data</h2>
 			<br>
 			<ul>
-				<li style="color:#89b3e479;">Converted to usable format (cloud optimized geotiff)</li>
+				<li style="color:#337acc;"">Converted to usable format (cloud optimized geotiff)</li>
 				Enables easy integration into geospatial analysis.
-				<li style="color:#89b3e479;">Delivery of standard products</li>
+				<li style="color:#337acc;">Delivery of standard products</li>
 				It allows you to get to work immediately by taking away the hassle of pre-processing.
 				<li style="color:#337acc;">Integration into web services</li>
 				You can use <em>Time series extraction</em> service to see evolution over time.<br>
@@ -507,10 +507,10 @@
 				<h4>Navigate to the contents</h4>
 				<p>For each product, you will find the following set of files:</p>
 				<table>
-					<tr><td>Quick look</td><td></td></tr>
-					<tr><td>Inspire metadata</td><td></td></tr>
-					<tr><td>Scene classification</td><td></td></tr>
-					<tr><td>Product image</td><td></td></tr>
+					<tr><td>Quick look</td><td>A small sized image representing the product</td></tr>
+					<tr><td>Inspire metadata</td><td>An XML file containing the metadata of the parameters</td></tr>
+					<tr><td>Scene classification</td><td>Scene classification layer to distinguish between snow, cloud, vegetation etc. For more info [insert link here]</td></tr>
+					<tr><td>Product image</td><td>Actual product image</td></tr>
 				</table>
 				<img src="resources\terrascope\oscars6.jpg">
 			</section>
@@ -531,33 +531,37 @@
 				</ul>
 			</section>
 			<section>
-				<h2>In QGIS: Add WMS/WMTS Layer</h2>
-				<br>
+				<h2>Importing image into GIS via web services</h2>
+				<p>In QGIS: Add WMS/WMTS Layer</p>
 				<img src="resources\terrascope\gis1.jpg">
 			</section>
 			<section>
-				<h2>WMTS</h2>
+				<h2>Importing image into GIS via web services</h2>
+				<p>WMTS</p>
 				<p>https://services.terrascope.be/wmts/v2/wmts?service=wmts&request=GetCapabilities</p>
 				<img src="resources\terrascope\gis2.jpg">
 			</section>
 			<section>
-				<h2>Connect</h2>
-				<br>
+				<h2>Importing image into GIS via web services</h2>
+				<p>Connect</p>
+
 				<img src="resources\terrascope\gis3.jpg">
 			</section>
 			<section>
-				<h2>Watch out!</h2>
-				<p>Change the Layer name before you press "Add"</p>
+				<h2>Importing image into GIS via web services</h2>
+				<p>Watch out! Change the Layer name before you press "Add"</p>
 				<img src="resources\terrascope\gis4.jpg">
 			</section>
 			<section>
-				<h2>Select the date, then press OK</h2>
-				<br>
+				<h2>Importing image into GIS via web services</h2>
+				<p>Select the date, then press OK</p>
+
 				<img src="resources\terrascope\gis5.jpg">
 			</section>
 			<section>
-				<h2>Layer is now available</h2>
-				<br>
+				<h2>Importing image into GIS via web services</h2>
+				<p>Layer is now available</p>
+
 				<img src="resources\terrascope\gis6.jpg">
 			</section>
 		</section>
@@ -587,9 +591,17 @@
 				<h2>Accessing data through Virtual machines</h2>
 				<p>show folders</p>
 			</section>
+
 		</section>
 
-		<section>Slide show ends</section>
+		<section class="fig-container"
+				 data-fig-id="fig-intro"
+				 data-file="flowchart.html">
+			<!--h2>What do you want to do with Copernicus satellite data?</h2-->
+
+		</section>
+
+		<section>Thank you</section>
 	</div>
 
 
@@ -609,8 +621,9 @@
                     { src: './internal_restricted/v1.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
                     { src: './internal_restricted/v1.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: './internal_restricted/v1.0/plugin/notes/notes.js' },{ src: 'socket.io/socket.io.js', async: true },
-					{ src: './internal_restricted/v1.0/plugin/notes-server/client.js', async: true }
-
+					{ src: './internal_restricted/v1.0/plugin/notes-server/client.js', async: true },
+					{ src: 'https://d3js.org/d3.v4.min.js' },
+					{ src: './customer_content/plugin/d3js/d3js.js' }
 				]
 			});
 

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" href="customer_content/plugin/revealjs-diagram/revealjs-diagram.css">
+</head>
+<body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="customer_content/plugin/revealjs-diagram/revealjs-diagram.js"></script>
+<script>
+
+    var treeData = {
+      name: 'I want to...',
+      x0: window.diagram.height / 2,
+      y0: 0,
+      children: []
+    };
+
+    var _transitions = [
+      window.diagram.addItem('explore satellite data', 'I want to...', treeData),
+         window.diagram.addItem('Terrascope viewer', 'explore satellite data', treeData),
+            window.diagram.addItem('Select a LAYER','Terrascope viewer', treeData),
+            window.diagram.addItem('Browse data over time','Terrascope viewer', treeData),
+            window.diagram.removeItem('Select a LAYER', treeData),
+            window.diagram.removeItem('Browse data over time', treeData),
+      window.diagram.addItem('see land cover changes', 'I want to...', treeData),
+        window.diagram.addLink('Terrascope viewer', 'see land cover changes', treeData),
+            window.diagram.addItem('COMPARE same layer, different dates','Terrascope viewer', treeData),
+            window.diagram.addItem('Layer Sentinel-1 Coherence layer (6 days interval)','Terrascope viewer', treeData),
+            window.diagram.addItem('EXPORT time lapses','Terrascope viewer', treeData),
+            window.diagram.removeItem('COMPARE same layer, different dates', treeData),
+            window.diagram.removeItem('Layer Sentinel-1 Coherence layer (6 days interval)', treeData),
+            window.diagram.removeItem('EXPORT time lapses', treeData),
+      window.diagram.addItem('compare data and products', 'I want to...', treeData),
+        window.diagram.addLink('Terrascope viewer', 'compare data and products', treeData),
+            window.diagram.addItem('COMPARE different layers, same date','Terrascope viewer', treeData),
+            window.diagram.removeItem('COMPARE different layers, same date', treeData),
+      window.diagram.addItem('look for trends', 'I want to...', treeData),
+        window.diagram.addLink('Terrascope viewer', 'look for trends', treeData),
+            window.diagram.addItem('AREAS OF INTEREST/EXPORT time lapses','Terrascope viewer', treeData),
+            window.diagram.removeItem('AREAS OF INTEREST/EXPORT time lapses', treeData),
+        window.diagram.addItem('openEO', 'look for trends', treeData),
+            window.diagram.addItem('Time series extraction','openEO', treeData),
+            window.diagram.removeItem('Time series extraction', treeData),
+      window.diagram.addItem('download data', 'I want to...', treeData),
+         window.diagram.addLink('Terrascope viewer', 'download data', treeData),
+            window.diagram.addItem('DOWNLOAD','Terrascope viewer', treeData),
+            window.diagram.removeItem('DOWNLOAD', treeData),
+         window.diagram.addItem('TerraCatalogue', 'download data', treeData),
+      window.diagram.addItem('integrate data in my application', 'I want to...', treeData),
+         window.diagram.addItem('WMTS webservices','integrate data in my application', treeData),
+         window.diagram.addLink('openEO','integrate data in my application', treeData),
+         window.diagram.addLink('TerraCatalogue','integrate data in my application', treeData),
+      window.diagram.addItem('integrate data in my GIS environment', 'I want to...', treeData),
+        window.diagram.addLink('WMTS webservices','integrate data in my GIS environment', treeData),
+        window.diagram.addLink('TerraCatalogue','integrate data in my GIS environment', treeData),
+      window.diagram.addItem('do advanced analyses', 'I want to...', treeData),
+        window.diagram.addItem('Notebooks', 'do advanced analyses', treeData),
+        window.diagram.addLink('openEO', 'do advanced analyses', treeData),
+      window.diagram.addItem('use UI-based applications (QGIS, SNAP, ...)', 'I want to...', treeData),
+         window.diagram.addItem('Virtual Machines', 'use UI-based applications (QGIS, SNAP, ...)', treeData),
+         window.diagram.addLink('TerraCatalogue', 'use UI-based applications (QGIS, SNAP, ...)', treeData),
+            window.diagram.addItem('+ local storage processing','TerraCatalogue', treeData),
+            window.diagram.removeItem('+ local storage processing', treeData),
+    ];
+
+    var _inverse_transitions = [
+
+           // window.diagram.removeItem(treeData),
+    ];
+
+    // start the tree
+    window.diagram.register('intro', function() {
+      window.diagram.init(treeData);
+    });
+  </script>
+</body>
+
+<!--
+
+      window.diagram.removeItem('explore satellite data', treeData),
+         window.diagram.removeItem('Terrascope viewer', treeData),
+            window.diagram.removeItem('Select a LAYER', treeData),
+            window.diagram.removeItem('Browse data over time', treeData),
+      window.diagram.removeItem('see land cover changes', treeData),
+        window.diagram.removeLink('Terrascope viewer', 'see land cover changes', treeData),
+            window.diagram.removeItem('COMPARE same layer, different dates', treeData),
+            window.diagram.removeItem('Layer Sentinel-1 Coherence layer (6 days interval)', treeData),
+            window.diagram.removeItem('EXPORT time lapses', treeData),
+      window.diagram.removeItem('compare data and products',treeData),
+        window.diagram.removeLink('Terrascope viewer', 'compare data and products', treeData),
+            window.diagram.removeItem('COMPARE different layers, same date', treeData),
+      window.diagram.removeItem('look for trends', 'I want to...', treeData),
+        window.diagram.removeLink('Terrascope viewer', 'look for trends', treeData),
+           window.diagram.removeItem('AREAS OF INTEREST/EXPORT time lapses', treeData),
+        window.diagram.removeItem('openEO', 'look for trends', treeData),
+            window.diagram.removeItem('Time series extraction', treeData),
+      window.diagram.removeItem('download data',  treeData),
+         window.diagram.removeLink('Terrascope viewer', 'download data', treeData),
+            window.diagram.removeItem('DOWNLOAD', treeData),
+         window.diagram.removeItem('TerraCatalogue',  treeData),
+      window.diagram.removeItem('integrate data in my application', treeData),
+         window.diagram.removeItem('WMTS webservices',treeData),
+         window.diagram.removeLink('openEO','integrate data in my application', treeData),
+         window.diagram.removeLink('TerraCatalogue','integrate data in my application', treeData),
+      window.diagram.removeItem('integrate data in my GIS environment', treeData),
+        window.diagram.removeLink('WMTS webservices','integrate data in my GIS environment', treeData),
+        window.diagram.removeLink('TerraCatalogue','integrate data in my GIS environment', treeData),
+      window.diagram.removeItem('do advanced analyses', treeData),
+        window.diagram.removeItem('Notebooks', treeData),
+        window.diagram.removeLink('openEO', 'do advanced analyses', treeData),
+      window.diagram.removeItem('use UI-based applications (QGIS, SNAP, ...)', treeData),
+         window.diagram.removeItem('Virtual Machines', treeData),
+         window.diagram.removeLink('TerraCatalogue', 'use UI-based applications (QGIS, SNAP, ...)', treeData),
+            window.diagram.removeItem('+ local storage processing', treeData),
+
+-->
