@@ -89,14 +89,16 @@
                     Understand different types of Copernicus satellite data and derived products available on Terrascope
                     Platform
                 </li>
-                <li class="fragment">Understand different tools and methods offered by Terrascope that can be leveraged to access and
+                <li class="fragment">Understand different tools and methods offered by Terrascope that can be leveraged
+                    to access and
                     process data
                 </li>
             </ul>
         </section>
-         <section id="whatisterrascope">
+        <section id="whatisterrascope">
             <h2>What is Terrascope?</h2>
-            <p class="fragment">Terrascope is the Belgian Collaborative Ground Segment for Sentinel missions. <br>It provides easy access
+            <p class="fragment">Terrascope is the Belgian Collaborative Ground Segment for Sentinel missions. <br>It
+                provides easy access
                 to:</p>
             <ul class="fragment">
                 <li style="color:#337acc;">satellite data</li>
@@ -128,7 +130,8 @@
                 <li style="color:#337acc;">Virtual machines</li>
                 <li style="color:#337acc;">Jupyter notebooks</li>
             </ul>
-            <p class="fragment">You can also make platform independent code with <a href="https://openeo.org">OpenEO</a>.</p>
+            <p class="fragment">You can also make platform independent code with <a href="https://openeo.org">OpenEO</a>.
+            </p>
             <aside class="notes">
                 Terrascope cluster resides within a data center which provides more than 3700 CPU cores, 13 TB memory
                 and
@@ -402,10 +405,12 @@
                     <li class="fragment">Terrascope provides a catalogue service based on <em>OpenSearch</em> and <em>GeoJSON</em>
                         collection and product metadata.
                     </li>
-                    <li class="fragment"><em>The OpenSearch Interface</em> is an <em>Open Geospatial Consortium (OGC)</em> standard based
+                    <li class="fragment"><em>The OpenSearch Interface</em> is an <em>Open Geospatial Consortium
+                        (OGC)</em> standard based
                         interface for the discovery of available Remote Sensing data collections and products.
                     </li>
-                    <li class="fragment">Users can discover the Terrascope Remote Sensing data using the web service, while OpenSearch
+                    <li class="fragment">Users can discover the Terrascope Remote Sensing data using the web service,
+                        while OpenSearch
                         clients can launch requests to the OpenSearch Interface for EO data discovery and download.
                     </li>
                     <li class="fragment">Next to the standard GeoJSON format, the catalogue service supports also ATOM.
@@ -610,32 +615,111 @@
             </section>
         </section>
 
-        <section>
-            <h2>Downloading data using the time series service</h2>
-            <ul>
-                <li>Via Terrascope Viewer</li>
-                <li>TODO expand here</li>
-                <li>Directly</li>
-            </ul>
+        <section id="timeseries">
+            <section>
+                <h2>Downloading data using the time series service</h2>
+                <ul>
+                    <li>Via Terrascope Viewer</li>
+                    <li>Directly, using time series web service</li>
+                </ul>
+
+                <p class="fragment">Note that downloading data to your own machine is not recommended. Rather, you can
+                    use virtual environments to access the data or process on the fly directly.</p>
+                <aside class="notes"> Time series data can be downloaded via the Terrascope viewer interface or using
+                    the time series web service.
+                </aside>
+            </section>
+            <section>
+                <h3>Accessing Time Series Service via Terrascope Viewer</h3>
+                <p>The Terrascope time series service allows you to retrieve time series for a number of Sentinel-1 and
+                    Sentinel-2 data layers:</p>
+                <ul>
+                    <li>Sentinel-1 σ0 ascending VV polarization</li>
+                    <li>Sentinel-1 σ0 descending VV polarization</li>
+                    <li>Sentinel-2 NDVI</li>
+                    <li>Sentinel-2 LAI</li>
+                    <li>CropSAR fAPAR</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Accessing Time Series Service via Terrascope Viewer</h3>
+                <h4>Define Area of Interest</h4>
+                <p>Step 1. Login / Step 2. Open 'Areas of Interest' tab / Step 3. Select a point or draw a polygon /
+                    Step 4. Click 'Save'</p>
+                <img src="resources\terrascope\ts1.jpg">
+                <aside class="notes">After you logged into the Terrascope Viewer interface, open the 'Areas of Interest'
+                    tab on the left side of your screen.
+                    Select a point or area by clicking 'Draw' and select 'Point' or 'Polygon'. Then, select one of the
+                    listed data layers.
+                    A third option is to upload a shapefile, which is done by clicking the 'Import' button. A dialogue
+                    window will open and you can browse to the shape file location.
+                    Please note that all supporting files (dbf, prj, shx, qpj) should be selected upon proper import.
+                </aside>
+            </section>
+            <section>
+                <h3>Accessing Time Series Service via Terrascope Viewer</h3>
+                <h4>Extract Time Series</h4>
+                <p>Click on 'Show Info' to see the graph</p>
+                <img src="resources\terrascope\ts2.jpg">
+                <aside class="notes">In this example, the Sentinel-2 NDVI for a single pixel is extracted. By clicking
+                    'Show info', the values for the given point or polygon are extracted.
+                    When the results are loaded, by default the upper panel plots the entire available time
+                    series.Alternatively, you can select a different time period from the buttons above the upper panel.
+                    The alternative choices are 1 month, 3 months, 6 months, the current from 1 January until today
+                    (YTD).
+                    The bottom panel always shows an overview with the time series of the entire available archive.
+                </aside>
+            </section>
+            <section>
+                <h3>Accessing Time Series Service via Terrascope Viewer</h3>
+                <h4>Export Options</h4>
+                <p>Click on the circle button and choose the preferred export option:</p>
+                <img src="resources\terrascope\ts2.jpg">
+                <aside class="notes">The plot can be printed on paper or exported as PNG, JPG, PDF or SVG image by
+                    clicking on the circle button in the upper right.
+                    Alternatively, you can have the data values behind the plot exported as CSV file.
+                    Files are exported with filename 'NEWPOINT' or 'new area of interest', with the filename extension
+                    being, png, jpeg, pdf, svg or csv, for point or polygon extractions, respectively.
+                </aside>
+            </section>
+            <section>
+                <h3>Accessing Time Series Webservice Service via Jupyter Notebooks</h3>
+                <p>Check out this notebook for inspiration!</p>
+                <a href="https://github.com/jurgeneveraerts/Terrascope-Notebooks/blob/master/TimeSeriesDemo.ipynb">https://github.com/jurgeneveraerts/Terrascope-Notebooks/blob/master/TimeSeriesDemo.ipynb</a>
+            </section>
+            <section
+                    data-background-iframe="https://nbviewer.jupyter.org/github/jurgeneveraerts/Terrascope-Notebooks/blob/master/TimeSeriesDemo.ipynb">
+
+            </section>
         </section>
 
         <section id="virtual">
             <section>
                 <h2>Accessing data using the virtual research environment</h2>
                 <ul>
-                    <li>Jupyter Notebooks</li>
                     <li>Virtual Machines</li>
+                    <li>Jupyter Notebooks</li>
                 </ul>
             </section>
-            <section>
-                <h2>Accessing data through Jupyter Notebooks</h2>
-                <p>Link to next training</p>
-            </section>
-            <section>
-                <h2>Accessing data through Virtual machines</h2>
-                <p>show folders</p>
-            </section>
 
+            <section>
+                <h3>Accessing data through Virtual machines</h3>
+                <p class="fragment">With a user Virtual Machine (VM), a developer or scientist can use a Virtual Research Environment, with access to the available data archives, as well as a powerful tool set and libraries
+                    for further data exploration and analysis (using e.g. the SNAP toolbox, GRASS GIS, and QGIS) or to develop-debug-test applications (in e.g. R, Python or Java). </p>
+                <img class="fragment" src="resources\terrascope\vm1.jpg">
+                <aside class="notes">The VM comes with several pre-installed command line tools, desktop applications, and developer tools, which are useful for data exploration
+                    (e.g. GDAL, QGIS, GRASS GIS, SNAP, Python, etc.). Targeted users are scientists and programmers developing applications that utilize the Terrascope data.
+                    After the prototyping phase, the Terrascope processing environment can be used for upscaled processing. The end goal should be an application running on the Terrascope computation platform.</aside>
+            </section>
+            <section>
+                <h3>Accessing data through Virtual machines</h3>
+                <p>Once you have a VM assigned to you, you can easily access the data by exploring the 'data' folder on the desktop.</p>
+                <img src="resources\terrascope\vm2.jpg">
+            </section>
+            <section>
+                <h3>Accessing data through Jupyter Notebooks</h3>
+                <p>TODO Provide link to the next training</p>
+            </section>
         </section>
         <section>Thank you.</section>
     </div>
@@ -664,37 +748,18 @@
 				]
 			});
 
+
     </script>
 
     <script>Reveal.initialize({
 			simplemenu: {
 				menuselector: '.menu a'
 			},
-            tableofcontents: {
-            // Specifies the slide title of the table of contents slide
-            title: "Table of Contents",
-
-            // Specifies the position of the table of contents slide in the presentation
-            position: 2,
-
-            // Specifies html tag in which the table of contents title stands
-            titleTag: "h2",
-
-            // Specifies which slide tag elements will be used
-            // for generating the table of contents.
-            titleTagSelector: "h2",
-
-            // Specifies if the first slide, mostly the title slide of the presentation, should be ignored.
-            ignoreFirstSlide: true,
-
-            // Specifies if every single element of the table of contents
-            // will be stepped through before moving on to the next slide.
-            fadeInElements: false
-        },
 			dependencies: [
 				{ src: './internal_restricted/v1.0/plugin/markdown/assets/js/revealjs/plugin/simplemenu/simplemenu.js', async: false }
 			]
 			});
+
 
 
 
