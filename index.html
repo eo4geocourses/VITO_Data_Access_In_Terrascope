@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="internal_restricted/v1.0/css/reveal.css">
 
     <link rel="stylesheet" href="internal_restricted/v1.0/css/theme/eo4geo.css" id="theme">
-    <link rel="stylesheet" href="internal_restricted/v1.0/plugin/markdown/css/theme/simplemenu.css">
+
 
     <!-- EO4GEO FONT ROBOTO SLAB -->
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
@@ -71,6 +71,7 @@
             dc:relation eo4geo:IP3-1-1;
             dc:relation eo4geo:WB1-4.
                         -->
+
 
     <div class="slides">
 
@@ -157,10 +158,20 @@
                 your use case.
             </aside>
         </section>
-        <section class="fig-container"
+        <!--section-- class="fig-container"
                  data-fig-id="fig-intro"
                  data-file="flowchart.html"
                  id="flow">
+            <aside class="notes">This flow chart describes how a user could use Terrascope based on their use case
+                needs.
+                For example, if you just want to explore satellite data, you can simply use the Terrascope Viewer. On
+                the other hand, if you want
+                to look for trends, you could either use Terrascope Viewer or openEO API to do timeseries extraction.
+            </aside>
+        </section-->
+        <section id="howtouseterrascope">
+            <h2>How to use Terrascope</h2>
+            <img src="resources\terrascope\howToUse.png">
             <aside class="notes">This flow chart describes how a user could use Terrascope based on their use case
                 needs.
                 For example, if you just want to explore satellite data, you can simply use the Terrascope Viewer. On
@@ -172,8 +183,8 @@
             <h2>Analysis Ready Data</h2>
             <br>
             <ul>
-                <li style="color:#337acc;"
-                ">Converted to usable format (Cloud Optimized Geotiff)</li>
+                <li style="color:#337acc;">
+                Converted to usable format (Cloud Optimized Geotiff)</li>
                 Enables easy integration into geospatial analysis.
                 <li style="color:#337acc;">Delivery of standard products</li>
                 It allows you to get to work immediately by taking away the hassle of pre-processing.
@@ -704,16 +715,24 @@
 
             <section>
                 <h3>Accessing data through Virtual machines</h3>
-                <p class="fragment">With a user Virtual Machine (VM), a developer or scientist can use a Virtual Research Environment, with access to the available data archives, as well as a powerful tool set and libraries
-                    for further data exploration and analysis (using e.g. the SNAP toolbox, GRASS GIS, and QGIS) or to develop-debug-test applications (in e.g. R, Python or Java). </p>
+                <p class="fragment">With a user Virtual Machine (VM), a developer or scientist can use a Virtual
+                    Research Environment, with access to the available data archives, as well as a powerful tool set and
+                    libraries
+                    for further data exploration and analysis (using e.g. the SNAP toolbox, GRASS GIS, and QGIS) or to
+                    develop-debug-test applications (in e.g. R, Python or Java). </p>
                 <img class="fragment" src="resources\terrascope\vm1.jpg">
-                <aside class="notes">The VM comes with several pre-installed command line tools, desktop applications, and developer tools, which are useful for data exploration
-                    (e.g. GDAL, QGIS, GRASS GIS, SNAP, Python, etc.). Targeted users are scientists and programmers developing applications that utilize the Terrascope data.
-                    After the prototyping phase, the Terrascope processing environment can be used for upscaled processing. The end goal should be an application running on the Terrascope computation platform.</aside>
+                <aside class="notes">The VM comes with several pre-installed command line tools, desktop applications,
+                    and developer tools, which are useful for data exploration
+                    (e.g. GDAL, QGIS, GRASS GIS, SNAP, Python, etc.). Targeted users are scientists and programmers
+                    developing applications that utilize the Terrascope data.
+                    After the prototyping phase, the Terrascope processing environment can be used for upscaled
+                    processing. The end goal should be an application running on the Terrascope computation platform.
+                </aside>
             </section>
             <section>
                 <h3>Accessing data through Virtual machines</h3>
-                <p>Once you have a VM assigned to you, you can easily access the data by exploring the 'data' folder on the desktop.</p>
+                <p>Once you have a VM assigned to you, you can easily access the data by exploring the 'data' folder on
+                    the desktop.</p>
                 <img src="resources\terrascope\vm2.jpg">
             </section>
             <section>
@@ -723,7 +742,7 @@
         </section>
         <section>Thank you.</section>
     </div>
-
+</div>
 
     <script src="internal_restricted/v1.0/js/reveal.js"></script>
 
@@ -734,7 +753,6 @@
 				progress: true,
 				history: true,
 				center: true,
-
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: './internal_restricted/v1.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -742,29 +760,9 @@
                     { src: './internal_restricted/v1.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: './internal_restricted/v1.0/plugin/notes/notes.js' },{ src: 'socket.io/socket.io.js', async: true },
 					{ src: './internal_restricted/v1.0/plugin/notes-server/client.js', async: true },
-					{ src: 'https://d3js.org/d3.v4.min.js' },
-					{ src: './customer_content/plugin/d3js/d3js.js' }
-					,{ src: './customer_content/plugin/tableofcontents/tableofcontents.js' }
+					{ src: './customer_content/plugin/tableofcontents/tableofcontents.js' },
 				]
 			});
-
-
     </script>
-
-    <script>Reveal.initialize({
-			simplemenu: {
-				menuselector: '.menu a'
-			},
-			dependencies: [
-				{ src: './internal_restricted/v1.0/plugin/markdown/assets/js/revealjs/plugin/simplemenu/simplemenu.js', async: false }
-			]
-			});
-
-
-
-
-
-    </script>
-</div>
 </body>
 </html>

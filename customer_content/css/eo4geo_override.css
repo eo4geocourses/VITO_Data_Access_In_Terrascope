@@ -8,7 +8,7 @@
  
  
 body:after {
-content: url(../images/eo4geocourses_logo.png);
+content: url(internal_restricted/images/eo4geocourses_logo.png);
 position: fixed;
 bottom: 3.5em;
 left: 3.5em;
