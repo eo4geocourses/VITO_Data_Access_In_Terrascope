@@ -25,7 +25,8 @@ More advanced users can take advantage of terrascope services (VMs, Notebooks, W
 * Accessing data using the virtual research environment
 
 ### Learning Outcomes
-* Understand different types of Copernicus satellite data and derived products available on Terrascope Platform
-* Understand different tools and methods that can be leveraged to access and process data
+* Identify different types of Copernicus satellite data and derived products available on Terrascope Platform.
+* Compare various Terrascope tools and methods that can be leveraged to access and process data.
+* Demonstrate understanding of the platform by performing the instructions to access the Copernicus data 
 
 _All rights belong to VITO - Vlaamse Instelling voor Technologisch Onderzoek._
